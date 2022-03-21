@@ -23,7 +23,7 @@
             @endif
         @endforeach
     </select>
-    <button type="submit">Update</button>
+    <button type="submit">更新</button>
 </form>
 
-<a href="/products">Back</a>
+<a href="/products">戻る</a>

@@ -19,10 +19,10 @@
             <option value="{{ $category->id }}">{{ $category->name }}</option>
         @endforeach
     </select>
-    <button type="submit">Create</button>
+    <button type="submit">新規追加</button>
 </form>
 
-<a href="/products">Back</a>
+<a href="/products">戻る</a>
 
 {{--<h1>New Products</h1>--}}
 

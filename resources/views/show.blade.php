@@ -2,4 +2,4 @@
 {{ $product->description }}
 {{ $product->price }}
 
-<a href="/products">Back</a>
+<a href="/products">戻る</a>

@@ -10,4 +10,4 @@
         <button type="submit">Delete</button>
     </form>
 @endforeach
-<a href="{{route('products.create')}}">New</a>
+<a href="{{route('products.create')}}">トップページへ</a>
