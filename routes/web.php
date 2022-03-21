@@ -17,13 +17,6 @@ Route::get('/', function () {
 
 Route::resource('products', 'ProductController');
 
-//Route::get('/products', 'ProductController@index')->name('product.list');
-//Route::get('/product/new', 'ProductController@create')->name('product.new');
-//Route::post('/product', 'ProductController@store')->name('product.store');
-//Route::get('/product/edit/{id}', 'ProductController@edit')->name('product.edit');
-//Route::post('/product/update/{id}', 'ProductController@update')->name('product.update');
-//
-//Route::get('/product/{id}', 'ProductController@show')->name('product.detail');
-//Route::delete('/product/{id}', 'ProductController@destroy')->name('product.destroy');
+Auth::routes(['verify' => true]);
 
-
+Route::get('/home', 'HomeController@index')->name('home');
