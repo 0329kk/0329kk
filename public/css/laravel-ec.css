@@ -148,4 +148,28 @@ label {
     color: #0fbe9f;
 }
 
+.laravel-ec-header-container {
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+    background-color: #ffffff;
+}
+
+.laravel-ec-header-search-input {
+    border: solid 1px #e5e5e5;
+}
+
+.laravel-ec-header-search-button {
+    background-color: #0fbe9f;
+}
+
+.laravel-ec-header-search-icon {
+    color: #ffffff;
+}
+
+.laravel-ec-header-fav-icon {
+    color: #191919;
+}
+
+.laravel-ec-header-shoppingcart-icon {
+    color: #ffffff;
+}
 
