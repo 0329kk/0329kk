@@ -36,16 +36,23 @@
                         <input type="hidden" name="weight" value="0">
                         <div class="row">
                             <div class="col-7">
-                                <button type="submit" class="btn samazon-submit-button w-100">
+                                <button type="submit" class="btn laravel-ec-submit-button w-100">
                                     <i class="fas fa-shopping-cart"></i>
                                     カートに追加
                                 </button>
                             </div>
                             <div class="col-5">
-                                <a href="/products/{{ $product->id }}/favorite" class="btn samazon-favorite-button text-dark w-100">
-                                    <i class="fa fa-heart"></i>
-                                    お気に入り
-                                </a>
+                                @if($product->isFavoritedBy(Auth::user()))
+                                    <a href="/products/{{ $product->id }}/favorite" class="btn laravel-ec-favorite-button text-dark w-100">
+                                        <i class="fa fa-heart"></i>
+                                        お気に入り解除
+                                    </a>
+                                @else
+                                    <a href="/products/{{ $product->id }}/favorite" class="btn laravel-ec-favorite-button text-dark w-100">
+                                        <i class="fa fa-heart"></i>
+                                        お気に入り
+                                    </a>
+                                @endif
                             </div>
                         </div>
                     </form>
@@ -73,11 +80,12 @@
                             <form method="POST" action="/products/{{ $product->id }}/reviews">
                                 {{ csrf_field() }}
                                 <textarea name="content" class="form-control m-2"></textarea>
-                                <button type="submit" class="btn samazon-submit-button ml-2">レビューを追加</button>
+                                <button type="submit" class="btn laravel-ec-submit-button ml-2">レビューを追加</button>
                             </form>
                         </div>
                     </div>
-                @endauth
+            @endauth
+            <!-- レビューを実装する箇所になります -->
             </div>
         </div>
     </div>
