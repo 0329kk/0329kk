@@ -40,6 +40,11 @@
                     </a>
                 </li>
                 <li class="nav-item mr-5">
+                    <a class="nav-link" href="{{ route('mypage.favorite') }}">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </li>
+                <li class="nav-item mr-5">
                     <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                         ログアウト
                     </a>
@@ -48,6 +53,7 @@
                         @csrf
                     </form>
                 </li>
+
             @endguest
         </ul>
     </div>
