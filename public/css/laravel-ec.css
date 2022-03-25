@@ -196,3 +196,7 @@ label {
     color: #191919;
 }
 
+.user-edit-label {
+    cursor: pointer;
+    cursor: hand;
+}

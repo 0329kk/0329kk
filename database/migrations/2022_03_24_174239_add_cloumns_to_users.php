@@ -15,7 +15,7 @@ class AddCloumnsToUsers extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->string('postal_code')->default('');
-            $table->text('address')->default('');
+            $table->text('address');
             $table->string('phone')->default('');
         });
     }
