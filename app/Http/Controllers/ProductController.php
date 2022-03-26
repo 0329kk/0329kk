@@ -47,7 +47,7 @@ class ProductController extends Controller
         $categories = Category::all();
         $major_category_names = Category::pluck('major_category_name')->unique();
 
-        return view('index', compact('products', 'category', 'categories', 'major_category_names', 'total_count', 'sort', 'sorted'));
+        return view('products.index', compact('products', 'category', 'categories', 'major_category_names', 'total_count', 'sort', 'sorted'));
     }
 
     public function favorite(Product $product)
@@ -103,7 +103,7 @@ class ProductController extends Controller
     {
         $reviews = $product->reviews()->get();
 
-        return view('show', compact('product', 'reviews'));
+        return view('products.show', compact('product', 'reviews'));
     }
 
     /**
