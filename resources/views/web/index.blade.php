@@ -90,7 +90,7 @@
                         <div class="col-12">
                             <p class="laravel-ec-product-label mt-2">
                                 柔軟剤 詰め替え 2L<br>
-                                <label>￥1000</labiel>
+                                <label>￥1000</label>
                             </p>
                         </div>
                     </div>
